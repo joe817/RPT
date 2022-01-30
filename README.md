@@ -13,16 +13,16 @@ All experiments are conducted with the following setting:
 
 ## Run this framework
 ### 1. Prepare the researcher semantic document set
-You should prepare a text file name "author_document_corpus.txt", each line represents a researcher's semantic document set, including the researcher ID and document sequence separated by tab(\t), for example:
+You should prepare a text file named "author_document_corpus.txt", where each line represents a researcher's semantic document set, including the researcher ID and document sequence separated by tab(\t), for example:
 ```
 a1 \t d1 \t d2 \t ... \t dm \n
 a2 \t d1 \t d2 \t ... \t dn \n
 ...
 ```
-If you want use your pre-trained word_embedding, you also need to prepare a word embedding dict named "data/word_embedding.pkl", which is optional.
+If you want use your own pre-trained word_embedding, you also need to prepare a word embedding dict named "data/word_embedding.pkl", which is optional.
 
 ### 2. Prepare the researcher community graph
-You should prepare a dict named "author_community.pkl", where the ksy is the researcher id, and the value includes two vectors of equal length, preserving the neighbor id and corresponding relation type index. For example:
+You should prepare a dict named "author_community.pkl", where the key is the researcher id, and the value includes two vectors of equal length, preserving the neighbor id and corresponding relation type index. For example:
 
 ```
 {a1: ["neighbors": [a2, a4, a9, ..., a6], 
